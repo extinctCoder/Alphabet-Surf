@@ -1,0 +1,271 @@
+﻿<UserControl x:Class="Alphabet_Surf.LearnAlphabets"
+			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:local="clr-namespace:Alphabet_Surf"
+			 xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+			 mc:Ignorable="d" >
+	<Grid>
+		<ScrollViewer>
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="5"></ColumnDefinition>
+					<ColumnDefinition Width="*"></ColumnDefinition>
+					<ColumnDefinition Width="5"></ColumnDefinition>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="5"></RowDefinition>
+					<RowDefinition Height="*"></RowDefinition>
+					<RowDefinition Height="5"></RowDefinition>
+					<RowDefinition Height="*"></RowDefinition>
+					<RowDefinition Height="5"></RowDefinition>
+				</Grid.RowDefinitions>
+				<GroupBox Header="Capital Latter" Grid.Column="1" Grid.Row="1">
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="5"></ColumnDefinition>
+							<ColumnDefinition Width="*"></ColumnDefinition>
+							<ColumnDefinition Width="5"></ColumnDefinition>
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="5"></RowDefinition>
+							<RowDefinition Height="*"></RowDefinition>
+							<RowDefinition Height="5"></RowDefinition>
+							<RowDefinition Height="*"></RowDefinition>
+							<RowDefinition Height="5"></RowDefinition>
+						</Grid.RowDefinitions>
+						<Grid Grid.Column="1" Grid.Row="1">
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+							</Grid.ColumnDefinitions>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="5"></RowDefinition>
+								<RowDefinition Height="*"></RowDefinition>
+								<RowDefinition Height="5"></RowDefinition>
+								<RowDefinition Height="*"></RowDefinition>
+								<RowDefinition Height="5"></RowDefinition>
+							</Grid.RowDefinitions>
+							<Button Grid.Column="1" Grid.Row="1" x:Name="cl_a" Click="cl_a_Click" Content="A"></Button>
+							<Button Grid.Column="3" Grid.Row="1" x:Name="cl_b" Click="cl_b_Click" Content="B"></Button>
+							<Button Grid.Column="5" Grid.Row="1" x:Name="cl_c" Click="cl_c_Click" Content="C"></Button>
+							<Button Grid.Column="7" Grid.Row="1" x:Name="cl_d" Click="cl_d_Click" Content="D"></Button>
+							<Button Grid.Column="9" Grid.Row="1" x:Name="cl_e" Click="cl_e_Click" Content="E"></Button>
+							<Button Grid.Column="11" Grid.Row="1" x:Name="cl_f" Click="cl_f_Click" Content="F"></Button>
+							<Button Grid.Column="13" Grid.Row="1" x:Name="cl_g" Click="cl_g_Click" Content="G"></Button>
+							<Button Grid.Column="15" Grid.Row="1" x:Name="cl_h" Click="cl_h_Click" Content="H"></Button>
+							<Button Grid.Column="17" Grid.Row="1" x:Name="cl_i" Click="cl_i_Click" Content="I"></Button>
+							<Button Grid.Column="19" Grid.Row="1" x:Name="cl_j" Click="cl_j_Click" Content="J"></Button>
+							<Button Grid.Column="21" Grid.Row="1" x:Name="cl_k" Click="cl_k_Click" Content="K"></Button>
+							<Button Grid.Column="23" Grid.Row="1" x:Name="cl_l" Click="cl_l_Click" Content="L"></Button>
+							<Button Grid.Column="25" Grid.Row="1" x:Name="cl_m" Click="cl_m_Click" Content="M"></Button>
+							<Button Grid.Column="1" Grid.Row="3" x:Name="cl_n" Click="cl_n_Click" Content="N"></Button>
+							<Button Grid.Column="3" Grid.Row="3" x:Name="cl_o" Click="cl_o_Click" Content="O"></Button>
+							<Button Grid.Column="5" Grid.Row="3" x:Name="cl_p" Click="cl_p_Click" Content="P"></Button>
+							<Button Grid.Column="7" Grid.Row="3" x:Name="cl_q" Click="cl_q_Click" Content="Q"></Button>
+							<Button Grid.Column="9" Grid.Row="3" x:Name="cl_r" Click="cl_r_Click" Content="R"></Button>
+							<Button Grid.Column="11" Grid.Row="3" x:Name="cl_s" Click="cl_s_Click" Content="S"></Button>
+							<Button Grid.Column="13" Grid.Row="3" x:Name="cl_t" Click="cl_t_Click" Content="T"></Button>
+							<Button Grid.Column="15" Grid.Row="3" x:Name="cl_u" Click="cl_u_Click" Content="U"></Button>
+							<Button Grid.Column="17" Grid.Row="3" x:Name="cl_v" Click="cl_v_Click" Content="V"></Button>
+							<Button Grid.Column="19" Grid.Row="3" x:Name="cl_w" Click="cl_w_Click" Content="W"></Button>
+							<Button Grid.Column="21" Grid.Row="3" x:Name="cl_x" Click="cl_x_Click" Content="X"></Button>
+							<Button Grid.Column="23" Grid.Row="3" x:Name="cl_y" Click="cl_y_Click" Content="Y"></Button>
+							<Button Grid.Column="25" Grid.Row="3" x:Name="cl_z" Click="cl_z_Click" Content="Z"></Button>
+						</Grid>
+						<materialDesign:Card Grid.Column="1" Grid.Row="3" Margin="16 16 16 16">
+							<Grid>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="10"></ColumnDefinition>
+									<ColumnDefinition Width="*"></ColumnDefinition>
+									<ColumnDefinition Width="10"></ColumnDefinition>
+									<ColumnDefinition Width="*"></ColumnDefinition>
+									<ColumnDefinition Width="10"></ColumnDefinition>
+									<ColumnDefinition Width="*"></ColumnDefinition>
+									<ColumnDefinition Width="10"></ColumnDefinition>
+								</Grid.ColumnDefinitions>
+								<Grid.RowDefinitions>
+									<RowDefinition Height="10"></RowDefinition>
+									<RowDefinition Height="AUTO"></RowDefinition>
+									<RowDefinition Height="10"></RowDefinition>
+								</Grid.RowDefinitions>
+								<Image Grid.Column="1" x:Name="cl_pic_1" Grid.Row="1" StretchDirection="Both" VerticalAlignment="Stretch" Stretch="UniformToFill"></Image>
+								<Grid Grid.Column="3" Grid.Row="1">
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="5"></ColumnDefinition>
+										<ColumnDefinition Width="*"></ColumnDefinition>
+										<ColumnDefinition Width="5"></ColumnDefinition>
+									</Grid.ColumnDefinitions>
+									<Grid.RowDefinitions>
+										<RowDefinition Height="5"></RowDefinition>
+										<RowDefinition Height="AUTO"></RowDefinition>
+										<RowDefinition Height="5"></RowDefinition>
+										<RowDefinition Height="*"></RowDefinition>
+										<RowDefinition Height="5"></RowDefinition>
+										<RowDefinition Height="AUTO"></RowDefinition>
+										<RowDefinition Height="5"></RowDefinition>
+										<RowDefinition Height="3*"></RowDefinition>
+										<RowDefinition Height="5"></RowDefinition>
+									</Grid.RowDefinitions>
+									<Label Grid.Column="1" Grid.Row="1" Content="Latter: "></Label>
+									<TextBlock Grid.Column="1" Grid.Row="3" x:Name="cl_alphabet_txt" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+									<Label Grid.Column="1" Grid.Row="5" Content="Description: "></Label>
+									<TextBlock Grid.Column="1" Grid.Row="7" x:Name="cl_alphabet_description" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+								</Grid>
+								<Image Grid.Column="5" x:Name="cl_pic_2" Grid.Row="1" StretchDirection="Both" VerticalAlignment="Stretch" Stretch="UniformToFill"></Image>
+							</Grid>
+						</materialDesign:Card>
+					</Grid>
+				</GroupBox>
+				<GroupBox Header="Small Latter" Grid.Column="1" Grid.Row="3">
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="5"></ColumnDefinition>
+							<ColumnDefinition Width="*"></ColumnDefinition>
+							<ColumnDefinition Width="5"></ColumnDefinition>
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="5"></RowDefinition>
+							<RowDefinition Height="*"></RowDefinition>
+							<RowDefinition Height="5"></RowDefinition>
+							<RowDefinition Height="*"></RowDefinition>
+							<RowDefinition Height="5"></RowDefinition>
+						</Grid.RowDefinitions>
+						<Grid Grid.Column="1" Grid.Row="1">
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+								<ColumnDefinition Width="*"></ColumnDefinition>
+								<ColumnDefinition Width="5"></ColumnDefinition>
+							</Grid.ColumnDefinitions>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="5"></RowDefinition>
+								<RowDefinition Height="*"></RowDefinition>
+								<RowDefinition Height="5"></RowDefinition>
+								<RowDefinition Height="*"></RowDefinition>
+								<RowDefinition Height="5"></RowDefinition>
+							</Grid.RowDefinitions>
+							<Button Grid.Column="1" Grid.Row="1" x:Name="sl_a" Click="sl_a_Click" Content="a"></Button>
+							<Button Grid.Column="3" Grid.Row="1" x:Name="sl_b" Click="sl_b_Click" Content="b"></Button>
+							<Button Grid.Column="5" Grid.Row="1" x:Name="sl_c" Click="sl_c_Click" Content="c"></Button>
+							<Button Grid.Column="7" Grid.Row="1" x:Name="sl_d" Click="sl_d_Click" Content="d"></Button>
+							<Button Grid.Column="9" Grid.Row="1" x:Name="sl_e" Click="sl_e_Click" Content="e"></Button>
+							<Button Grid.Column="11" Grid.Row="1" x:Name="sl_f" Click="sl_f_Click" Content="f"></Button>
+							<Button Grid.Column="13" Grid.Row="1" x:Name="sl_g" Click="sl_g_Click" Content="g"></Button>
+							<Button Grid.Column="15" Grid.Row="1" x:Name="sl_h" Click="sl_h_Click" Content="h"></Button>
+							<Button Grid.Column="17" Grid.Row="1" x:Name="sl_i" Click="sl_i_Click" Content="i"></Button>
+							<Button Grid.Column="19" Grid.Row="1" x:Name="sl_j" Click="sl_j_Click" Content="j"></Button>
+							<Button Grid.Column="21" Grid.Row="1" x:Name="sl_k" Click="sl_k_Click" Content="k"></Button>
+							<Button Grid.Column="23" Grid.Row="1" x:Name="sl_l" Click="sl_l_Click" Content="l"></Button>
+							<Button Grid.Column="25" Grid.Row="1" x:Name="sl_m" Click="sl_m_Click" Content="m"></Button>
+							<Button Grid.Column="1" Grid.Row="3" x:Name="sl_n" Click="sl_n_Click" Content="n"></Button>
+							<Button Grid.Column="3" Grid.Row="3" x:Name="sl_o" Click="sl_o_Click" Content="o"></Button>
+							<Button Grid.Column="5" Grid.Row="3" x:Name="sl_p" Click="sl_p_Click" Content="p"></Button>
+							<Button Grid.Column="7" Grid.Row="3" x:Name="sl_q" Click="sl_q_Click" Content="q"></Button>
+							<Button Grid.Column="9" Grid.Row="3" x:Name="sl_r" Click="sl_r_Click" Content="r"></Button>
+							<Button Grid.Column="11" Grid.Row="3" x:Name="sl_s" Click="sl_s_Click" Content="s"></Button>
+							<Button Grid.Column="13" Grid.Row="3" x:Name="sl_t" Click="sl_t_Click" Content="t"></Button>
+							<Button Grid.Column="15" Grid.Row="3" x:Name="sl_u" Click="sl_u_Click" Content="u"></Button>
+							<Button Grid.Column="17" Grid.Row="3" x:Name="sl_v" Click="sl_v_Click" Content="v"></Button>
+							<Button Grid.Column="19" Grid.Row="3" x:Name="sl_w" Click="sl_w_Click" Content="w"></Button>
+							<Button Grid.Column="21" Grid.Row="3" x:Name="sl_x" Click="sl_x_Click" Content="x"></Button>
+							<Button Grid.Column="23" Grid.Row="3" x:Name="sl_y" Click="sl_y_Click" Content="y"></Button>
+							<Button Grid.Column="25" Grid.Row="3" x:Name="sl_z" Click="sl_z_Click" Content="z"></Button>
+						</Grid>
+						<materialDesign:Card Grid.Column="1" Grid.Row="3" Margin="16 16 16 16">
+							<Grid>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="10"></ColumnDefinition>
+									<ColumnDefinition Width="*"></ColumnDefinition>
+									<ColumnDefinition Width="10"></ColumnDefinition>
+									<ColumnDefinition Width="*"></ColumnDefinition>
+									<ColumnDefinition Width="10"></ColumnDefinition>
+									<ColumnDefinition Width="*"></ColumnDefinition>
+									<ColumnDefinition Width="10"></ColumnDefinition>
+								</Grid.ColumnDefinitions>
+								<Grid.RowDefinitions>
+									<RowDefinition Height="10"></RowDefinition>
+									<RowDefinition Height="AUTO"></RowDefinition>
+									<RowDefinition Height="10"></RowDefinition>
+								</Grid.RowDefinitions>
+								<Image Grid.Column="1" x:Name="sl_pic_1" Grid.Row="1" StretchDirection="Both" VerticalAlignment="Stretch" Stretch="UniformToFill"></Image>
+								<Grid Grid.Column="3" Grid.Row="1">
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="5"></ColumnDefinition>
+										<ColumnDefinition Width="*"></ColumnDefinition>
+										<ColumnDefinition Width="5"></ColumnDefinition>
+									</Grid.ColumnDefinitions>
+									<Grid.RowDefinitions>
+										<RowDefinition Height="5"></RowDefinition>
+										<RowDefinition Height="AUTO"></RowDefinition>
+										<RowDefinition Height="5"></RowDefinition>
+										<RowDefinition Height="*"></RowDefinition>
+										<RowDefinition Height="5"></RowDefinition>
+										<RowDefinition Height="AUTO"></RowDefinition>
+										<RowDefinition Height="5"></RowDefinition>
+										<RowDefinition Height="3*"></RowDefinition>
+										<RowDefinition Height="5"></RowDefinition>
+									</Grid.RowDefinitions>
+									<Label Grid.Column="1" Grid.Row="1" Content="Latter: "></Label>
+									<TextBlock Grid.Column="1" Grid.Row="1" x:Name="sl_alphabet_txt" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+									<Label Grid.Column="1" Grid.Row="5" Content="Description: "></Label>
+									<TextBlock Grid.Column="1" Grid.Row="3" x:Name="sl_alphabet_description" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+								</Grid>
+								<Image Grid.Column="5" x:Name="sl_pic_2" Grid.Row="1" StretchDirection="Both" VerticalAlignment="Stretch" Stretch="UniformToFill"></Image>
+							</Grid>
+						</materialDesign:Card>
+					</Grid>
+				</GroupBox>
+			</Grid>
+		</ScrollViewer>
+	</Grid>
+</UserControl>

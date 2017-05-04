@@ -1,12 +1,112 @@
 ﻿<Window x:Class="Alphabet_Surf.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Alphabet_Surf"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="clr-namespace:Alphabet_Surf"
+		xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+		xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+		mc:Ignorable="d" WindowState="Maximized"
+		Title="Alphabet_Surf" MinHeight="576" MinWidth="1024.5" WindowStartupLocation="CenterScreen">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="5"></ColumnDefinition>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+			<ColumnDefinition Width="5"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="5"></RowDefinition>
+			<RowDefinition Height="AUTO"></RowDefinition>
+			<RowDefinition Height="5"></RowDefinition>
+			<RowDefinition Height="*"></RowDefinition>
+			<RowDefinition Height="5"></RowDefinition>
+		</Grid.RowDefinitions>
+		<materialDesign:ColorZone Grid.Column="1" Grid.Row="1" x:Name="home_container" Mode="PrimaryLight" Padding="16">
+			<!-- home bar place-->
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="5"></ColumnDefinition>
+					<ColumnDefinition Width="150"></ColumnDefinition>
+					<ColumnDefinition Width="5"></ColumnDefinition>
+					<ColumnDefinition Width="*"></ColumnDefinition>
+					<ColumnDefinition Width="5"></ColumnDefinition>
+					<ColumnDefinition Width="150"></ColumnDefinition>
+					<ColumnDefinition Width="5"></ColumnDefinition>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="5"></RowDefinition>
+					<RowDefinition Height="*"></RowDefinition>
+					<RowDefinition Height="5"></RowDefinition>
+				</Grid.RowDefinitions>
+				<Button Grid.Column="1" Grid.Row="1" x:Name="home_btn" Click="home_btn_Click" Content="Home"></Button>
+				<TextBox Grid.Column="3" Grid.Row="1" x:Name="address_bar" TextChanged="address_bar_TextChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+				<Button Grid.Column="5" Grid.Row="1" x:Name="search_btn" Click="search_btn_Click" Content="Search / Go"></Button>
+			</Grid>
+		</materialDesign:ColorZone>
+		<Grid Grid.Column="1" Grid.Row="3" x:Name="main_container">
+			<!--content holder-->
+			<Grid x:Name="primary_btn_set">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="5"></ColumnDefinition>
+					<ColumnDefinition Width="*"></ColumnDefinition>
+					<ColumnDefinition Width="5"></ColumnDefinition>
+					<ColumnDefinition Width="*"></ColumnDefinition>
+					<ColumnDefinition Width="5"></ColumnDefinition>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="5"></RowDefinition>
+					<RowDefinition Height="*"></RowDefinition>
+					<RowDefinition Height="5"></RowDefinition>
+					<RowDefinition Height="*"></RowDefinition>
+					<RowDefinition Height="5"></RowDefinition>
+				</Grid.RowDefinitions>
+				<Button Grid.Column="1" Grid.Row="1" x:Name="learn_alphabets_btn" Click="learn_alphabets_btn_Click" Content="Learn Alphabets"></Button>
+				<Button Grid.Column="1" Grid.Row="3" x:Name="word_book_btn"	Click="word_book_btn_Click" Content="Word Book"></Button>
+				<Button Grid.Column="3" Grid.Row="1" x:Name="play_games_btn" Click="play_games_btn_Click" Content="Play Puzzle"></Button>
+				<Button Grid.Column="3" Grid.Row="3" x:Name="advanched_btn" Click="advanched_btn_Click" Content="Advanced"></Button>
+			</Grid>
+		</Grid>
+		<Grid Grid.Column="1" Grid.Row="3" x:Name="public_container">
+			<!--extra feature-->
+		</Grid>
+		<Grid Grid.Column="1" Grid.Row="3" x:Name="browser_container">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="5"></ColumnDefinition>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+				<ColumnDefinition Width="5"></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="5"></RowDefinition>
+				<RowDefinition Height="*"></RowDefinition>
+				<RowDefinition Height="5"></RowDefinition>
+				<RowDefinition Height="AUTO"></RowDefinition>
+				<RowDefinition Height="5"></RowDefinition>
+			</Grid.RowDefinitions>
+			<!--browser feature-->
+			<cefSharp:ChromiumWebBrowser Grid.Column="1" Grid.Row="1" x:Name="web_browser">
+			</cefSharp:ChromiumWebBrowser>
+			<Grid Grid.Column="1" Grid.Row="3" >
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="5"></ColumnDefinition>
+					<ColumnDefinition Width="AUTO"></ColumnDefinition>
+					<ColumnDefinition Width="5"></ColumnDefinition>
+					<ColumnDefinition Width="AUTO"></ColumnDefinition>
+					<ColumnDefinition Width="5"></ColumnDefinition>
+					<ColumnDefinition Width="12*"></ColumnDefinition>
+					<ColumnDefinition Width="5"></ColumnDefinition>
+					<ColumnDefinition Width="2*"></ColumnDefinition>
+					<ColumnDefinition Width="5"></ColumnDefinition>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="5"></RowDefinition>
+					<RowDefinition Height="*"></RowDefinition>
+					<RowDefinition Height="5"></RowDefinition>
+				</Grid.RowDefinitions>
+				<Button Grid.Column="1" Grid.Row="1" Content="Previous" Command="{Binding ElementName=web_browser, Path=BackCommand}"></Button>
+				<Button Grid.Column="3" Grid.Row="1" Content="Next" Command="{Binding ElementName=web_browser, Path=ForwardCommand}"></Button>
+				<TextBlock Grid.Column="5" Grid.Row="1" Text="{Binding Address, ElementName = web_browser}" VerticalAlignment="Center"></TextBlock>
+				<ProgressBar Grid.Column="7" Grid.Row="1" IsIndeterminate="{Binding IsLoading, ElementName = web_browser}"></ProgressBar>
+			</Grid>
+		</Grid>
+	</Grid>
 </Window>
